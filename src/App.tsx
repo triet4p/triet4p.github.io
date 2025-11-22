@@ -41,6 +41,17 @@ const portfolioData = {
     ],
     experience: [
       {
+        company: "Công ty cổ phần Data Impact VN",
+        role: "Thực tập sinh AI Engineer",
+        period: "09/2025 - nay",
+        description: [
+          "Nghiên cứu chuyên sâu về Generative AI: RAG, AI Agents, giao thức MCP và kiến trúc Agent-to-Agent (A2A).",
+          "Phát triển hệ thống Đa tác tử (Multi-Agent Systems) có khả năng giao tiếp và phối hợp tự chủ.",
+          "Xử lý dữ liệu quy mô lớn và xây dựng Đồ thị tri thức (Knowledge Graph) trên nền tảng Databricks.",
+          "Tham gia xây dựng các giải pháp Data và AI cho các bài toán doanh nghiệp."
+        ]
+      },
+      {
         company: "Công ty cổ phần VCCorp",
         role: "Thực tập sinh Data Engineer",
         period: "03/2025 - 05/2025",
@@ -53,12 +64,12 @@ const portfolioData = {
       },
     ],
     skills: {
-      "Lập trình & Nền tảng": ["C", "C++", "Java", "Python", "HTML/CSS", "JS/TS", "OOP", "DSA"],
+      "Lập trình & Nền tảng": ["C", "C++", "Java", "Python", "HTML/CSS", "JavaScript/TypeScript", "Rust", "OOP", "DSA"],
       "Cơ sở dữ liệu": ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Redis", "ETL"],
       "Backend": ["RESTful API", "Microservices", "FastAPI", "Version Control"],
-      "AI - ML": ["Scikit-learn", "Deep Learning (CNN, RNN, GAN)", "Transformers", "LLM", "PyTorch", "Hugging Face"],
+      "AI - ML": ["Machine Learning (scikit-learn)", "Deep Learning with PyTorch(CNN, RNN, GAN, Transformer)", "Generative AI (LLM, RAG, Agents, MCP, A2A)"],
       "Big Data": ["Hadoop", "Spark", "Kafka", "Hive", "HBase", "Batch/Real-time Processing"],
-      "DevOps & Tools": ["Linux", "Docker", "Kubernetes", "Git", "GCP/Cloud Basics"],
+      "DevOps & Tools": ["Linux", "Docker", "Kubernetes", "Git", "GCP/Cloud Basics", "Databricks"],
     },
     projects: [
       {
@@ -150,6 +161,17 @@ const portfolioData = {
     ],
     experience: [
       {
+        company: "Data Impact VN",
+        role: "AI Engineer Intern",
+        period: "09/2025 - Present",
+        description: [
+          "Conducted advanced research on Generative AI: RAG, AI Agents, MCP protocols, and Agent-to-Agent (A2A) architectures.",
+          "Developed autonomous Multi-Agent Systems capable of complex inter-agent communication.",
+          "Leveraged Databricks for large-scale data processing and Knowledge Graph construction.",
+          "Contributed to the design and deployment of enterprise-grade Data & AI solutions."
+        ]
+      },
+      {
         company: "VCCorp Corporation",
         role: "Data Engineer Intern",
         period: "03/2025 - 05/2025",
@@ -162,12 +184,12 @@ const portfolioData = {
       },
     ],
     skills: {
-      "Programming & Foundations": ["C", "C++", "Java", "Python", "HTML/CSS", "JS/TS", "OOP", "DSA"],
+      "Programming & Foundations": ["C", "C++", "Java", "Python", "HTML/CSS", "JavaScript/TypeScript", "Rust", "OOP", "DSA"],
       "Databases": ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Redis", "ETL"],
       "Backend": ["RESTful API", "Microservices", "FastAPI", "Version Control"],
-      "AI - ML": ["Scikit-learn", "Deep Learning (CNN, RNN, GAN)", "Transformers", "LLM", "PyTorch", "Hugging Face"],
+      "AI - ML": ["Machine Learning (scikit-learn)", "Deep Learning with PyTorch(CNN, RNN, GAN, Transformer)", "Generative AI (LLM, RAG, Agents, MCP, A2A)"],
       "Big Data": ["Hadoop", "Spark", "Kafka", "Hive", "HBase", "Batch/Real-time Processing"],
-      "DevOps & Tools": ["Linux", "Docker", "Kubernetes", "Git", "GCP/Cloud Basics"],
+      "DevOps & Tools": ["Linux", "Docker", "Kubernetes", "Git", "GCP/Cloud Basics", "Databricks"],
     },
     projects: [
       {
