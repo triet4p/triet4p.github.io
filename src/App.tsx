@@ -16,7 +16,7 @@ const portfolioData = {
     },
     profile: {
       name: "Lê Minh Triết",
-      title: "Thực tập sinh AI Engineer",
+      title: "AI Engineer",
       location: "Quận Hoàng Mai, Hà Nội",
       email: "trietlm0306@gmail.com",
       phone: "0775528066",
@@ -42,12 +42,23 @@ const portfolioData = {
     experience: [
       {
         company: "Công ty cổ phần Data Impact VN",
-        role: "Thực tập sinh AI Engineer",
-        period: "09/2025 - nay",
+        role: "AI Engineer",
+        period: "03/2026 - nay",
         description: [
-          "Nghiên cứu chuyên sâu về Generative AI: RAG, AI Agents, giao thức MCP và kiến trúc Agent-to-Agent (A2A).",
-          "Phát triển hệ thống Đa tác tử (Multi-Agent Systems) có khả năng giao tiếp và phối hợp tự chủ.",
-          "Xử lý dữ liệu quy mô lớn và xây dựng Đồ thị tri thức (Knowledge Graph) trên nền tảng Databricks.",
+          "Triển khai các hệ thống Generative AI (RAG, Agents, MCP, A2A) cho bài toán doanh nghiệp.",
+          "Thiết kế và vận hành hệ thống Đa tác tử (Multi-Agent Systems) có khả năng phối hợp tự chủ.",
+          "Tối ưu pipeline xử lý dữ liệu và xây dựng Đồ thị tri thức (Knowledge Graph) trên Databricks.",
+          "Phối hợp cùng team triển khai giải pháp Data/AI trong môi trường production."
+        ]
+      },
+      {
+        company: "Công ty cổ phần Data Impact VN",
+        role: "Thực tập sinh AI Engineer",
+        period: "09/2025 - 02/2026",
+        description: [
+          "Nghiên cứu Generative AI: RAG, AI Agents, giao thức MCP và kiến trúc Agent-to-Agent (A2A).",
+          "Phát triển prototype multi-agent và luồng giao tiếp giữa các tác tử.",
+          "Xử lý dữ liệu quy mô lớn và xây dựng Knowledge Graph trên Databricks.",
           "Tham gia xây dựng các giải pháp Data và AI cho các bài toán doanh nghiệp."
         ]
       },
@@ -67,54 +78,114 @@ const portfolioData = {
       "Lập trình & Nền tảng": ["C", "C++", "Java", "Python", "HTML/CSS", "JavaScript/TypeScript", "Rust", "OOP", "DSA"],
       "Cơ sở dữ liệu": ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Redis", "ETL"],
       "Backend": ["RESTful API", "Microservices", "FastAPI", "Version Control"],
-      "AI - ML": ["Machine Learning (scikit-learn)", "Deep Learning with PyTorch(CNN, RNN, GAN, Transformer)", "Generative AI (LLM, RAG, Agents, MCP, A2A)"],
+      "AI - ML": ["Machine Learning (scikit-learn)", "Deep Learning with PyTorch(CNN, RNN, GAN, Transformer)", "Generative AI (LLM, RAG, Agents, MCP, A2A)", "Robotics", "VLA (Vision-Language-Action)"],
       "Big Data": ["Hadoop", "Spark", "Kafka", "Hive", "HBase", "Batch/Real-time Processing"],
       "DevOps & Tools": ["Linux", "Docker", "Kubernetes", "Git", "GCP/Cloud Basics", "Databricks"],
     },
     projects: [
       {
-        name: "MCP-FIN-TEST",
-        type: "Agent Tài chính AI & Giao thức MCP",
-        period: "9/2025 - 10/2025",
-        repo: "https://github.com/triet4p/mcp-fin-test",
-        tech: ["Python", "FastAPI", "LangChain", "MCP", "Redis", "Docker", "Multi-LLM"],
+        name: "Cognition",
+        type: "Hệ thống bộ nhớ nhận thức & Agent runtime (Rust)",
+        period: "2025 - nay",
+        repo: "https://github.com/triet4p/cognition",
+        tech: ["Rust", "Tokio", "SQLx", "SQLite", "petgraph", "Serde"],
         description:
-          "Agent tài chính AI xây dựng trên kiến trúc Model-Context-Protocol (MCP), cho phép mở rộng module linh hoạt để phân tích dữ liệu chứng khoán.",
+          "Rust-first implementation cho hệ thống bộ nhớ agent theo hướng cognitively grounded, mở rộng thành kiến trúc agent đầy đủ.",
         features: [
-          "Hỗ trợ đa LLM: Chuyển đổi linh hoạt giữa Gemini, OpenAI, và Ollama.",
-          "Kiến trúc Microservices: Tách biệt Agent Host, Tool Registry và Data Services (Yahoo Finance).",
-          "Bộ nhớ & Caching: Tích hợp Redis cho lưu trữ hội thoại và caching phản hồi.",
-          "Tích hợp sâu với ITAPIA để cung cấp các phân tích tài chính chuyên sâu.",
+          "Long-term memory và truy hồi dựa trên đồ thị kiến thức với spreading activation.",
+          "Pipeline trích xuất ký ức và prompt registry cho LLM.",
+          "Các lớp runtime/skill/CLI và định hướng Python binding.",
+          "Mô hình node/edge đa dạng hỗ trợ lifecycle intention và quan hệ ngữ nghĩa.",
         ],
       },
       {
-        name: "ITAPIA (MVP)",
-        type: "Hệ thống hỗ trợ đầu tư cổ phiếu",
+        name: "CogMem - Agent Memory Cognitive",
+        type: "Bộ nhớ hội thoại dài hạn theo hướng cognitive",
+        period: "2025 - nay",
+        repo: "https://github.com/triet4p/agent-memory-cognitive",
+        tech: ["Python", "uv", "Docker", "MkDocs"],
+        description:
+          "Hệ thống long-term conversational memory với kiến trúc retain/recall/reflect và bộ tài liệu chuẩn hóa.",
+        features: [
+          "Thiết kế retain/recall/reflect cho bộ nhớ hội thoại dài hạn.",
+          "Distill và đánh giá benchmark LongMemEval, LoCoMo.",
+          "Tutorials và tài liệu chuẩn hóa trên GitHub Pages.",
+          "API local và Docker smoke test cho kiểm thử nhanh.",
+        ],
+      },
+      {
+        name: "Bridge Research App",
+        type: "Ứng dụng AI Research Assistant desktop",
+        period: "2025 - nay",
+        repo: "https://github.com/triet4p/bridge-research",
+        tech: ["React", "TypeScript", "Tailwind CSS", "Tauri", "Python", "FastAPI", "DSPy", "SQLite"],
+        description:
+          "Ứng dụng desktop giúp theo dõi ArXiv, phân tích paper và tổng hợp báo cáo triển khai.",
+        features: [
+          "Smart search + preview, thư viện nghiên cứu offline và quản lý PDF.",
+          "Talk-to-Paper RAG với điều hướng mục lục và render LaTeX.",
+          "Trend radar phân tích hàng trăm paper và tương tác theo keyword.",
+          "Agentic reporting đa mô hình (Gemini/OpenAI/Claude/Ollama).",
+        ],
+      },
+      {
+        name: "LeRobot",
+        type: "Thư viện robotics & VLA trong PyTorch",
+        period: "2024 - nay",
+        repo: "https://github.com/triet4p/lerobot",
+        tech: ["Python", "PyTorch", "Hugging Face Hub", "Parquet", "MP4"],
+        description:
+          "Thư viện robotics cung cấp model, dataset và công cụ huấn luyện cho robot thực.",
+        features: [
+          "Robot interface thống nhất cho nhiều phần cứng và thiết bị teleop.",
+          "LeRobotDataset chuẩn hóa dữ liệu (Parquet + video) và streaming.",
+          "Policy SoTA cho Imitation Learning, RL và Vision-Language-Action.",
+          "Tích hợp Hugging Face Hub để chia sẻ dataset và model.",
+        ],
+      },
+      {
+        name: "Math AI Connect",
+        type: "Personal Knowledge Journal (Astro)",
+        period: "2026 - nay",
+        repo: "https://github.com/triet4p/math-ai-connect",
+        tech: ["Astro", "MDX", "Tailwind CSS", "remark-math", "rehype-katex"],
+        description:
+          "Nhật ký kiến thức Toán & AI, quản lý bài viết và kế hoạch nghiên cứu.",
+        features: [
+          "Collection posts và plannedTopics với schema nội dung rõ ràng.",
+          "Trang /posts và /plans hỗ trợ phân loại theo tag/chủ đề.",
+          "Render công thức toán bằng KaTeX cho nội dung kỹ thuật.",
+          "Triển khai GitHub Pages với workflow tự động.",
+        ],
+      },
+      {
+        name: "Aegis-MA",
+        type: "SDK Multi-Agent A2A (JSON-RPC/WebSocket)",
+        period: "2025 - nay",
+        repo: "https://github.com/triet4p/aegis-ma",
+        tech: ["Python", "WebSocket", "JSON-RPC 2.0", "Pydantic", "JWT"],
+        description:
+          "Hệ thống multi-agent semi-centralized kèm SDK và agent tham chiếu.",
+        features: [
+          "Orchestrator quản lý đăng ký, giám sát và phát hành JWT.",
+          "Core SDK gồm BaseAgent, registry, schemas và logging chuẩn hóa.",
+          "Giao tiếp P2P theo JSON-RPC 2.0 over WebSocket.",
+          "Thiết kế mở rộng cho registry/auth/backends.",
+        ],
+      },
+      {
+        name: "ITAPIA",
+        type: "Trợ lý đầu tư cổ phiếu minh bạch (MVP)",
         period: "6/2025 - 8/2025",
         repo: "https://github.com/triet4p/itapia",
-        tech: ["Python", "FastAPI", "Pytorch", "PostgreSQL", "Redis", "Docker", "Vue.js"],
+        tech: ["Python", "FastAPI", "Vue.js", "TypeScript", "Docker", "PostgreSQL", "Redis"],
         description:
-          "Hệ thống hỗ trợ đầu tư full-stack dựa trên kiến trúc microservices, tập trung vào XAI (Giải thích AI) và cá nhân hóa.",
+          "Nền tảng trợ lý đầu tư tập trung vào XAI và minh bạch hóa quyết định.",
         features: [
-          "Phân tích đa luồng: Chỉ báo kĩ thuật (TA-Lib), Phân tích tin tức (BERT/NER), Dự báo (LightGBM).",
-          "Rule Engine minh bạch: Dựa trên Cây Biểu thức Tượng trưng để tạo các quy tắc đầu tư có thể giải thích được.",
-          "Backend hiệu suất cao với FastAPI & Pydantic.",
-          "Frontend SPA với Vue.js & TypeScript, xác thực OAuth2/JWT.",
-        ],
-      },
-      {
-        name: "Big Data trên Kubernetes",
-        type: "Hệ thống xử lý Log Streaming",
-        period: "12/2024 - 4/2025",
-        repo: "https://github.com/triet4p/app-log-process-k8s",
-        tech: ["Python", "Docker", "Kubernetes", "Hadoop", "Spark", "Kafka", "Hive"],
-        description:
-          "Xây dựng hệ thống Big Data real-time xử lý log streaming triển khai hoàn toàn trên Kubernetes cluster.",
-        features: [
-          "Pipeline: Kafka → Spark Streaming → HDFS → Hive.",
-          "Containerize Hadoop ecosystem tối ưu cho K8s.",
-          "Tích hợp Spark Operator để quản lý ứng dụng Spark.",
-          "Data Warehouse layer với Hive Metastore và PostgreSQL backend.",
+          "Hybrid AI: dự báo, NLP tin tức và Rule Engine giải thích.",
+          "Explainable recommendations kèm bằng chứng rule.",
+          "Cá nhân hóa hồ sơ đầu tư và quản trị rủi ro.",
+          "Full-stack microservices với Docker và API chuẩn hóa.",
         ],
       },
     ],
@@ -136,7 +207,7 @@ const portfolioData = {
     },
     profile: {
       name: "Lê Minh Triết",
-      title: "AI Engineer Intern",
+      title: "AI Engineer",
       location: "Hoang Mai Dist, Hanoi",
       email: "trietlm0306@gmail.com",
       phone: "0775528066",
@@ -162,13 +233,24 @@ const portfolioData = {
     experience: [
       {
         company: "Data Impact VN",
-        role: "AI Engineer Intern",
-        period: "09/2025 - Present",
+        role: "AI Engineer",
+        period: "03/2026 - Present",
         description: [
-          "Conducted advanced research on Generative AI: RAG, AI Agents, MCP protocols, and Agent-to-Agent (A2A) architectures.",
-          "Developed autonomous Multi-Agent Systems capable of complex inter-agent communication.",
-          "Leveraged Databricks for large-scale data processing and Knowledge Graph construction.",
-          "Contributed to the design and deployment of enterprise-grade Data & AI solutions."
+          "Delivered Generative AI systems (RAG, Agents, MCP, A2A) for enterprise use cases.",
+          "Designed and operated autonomous Multi-Agent Systems with coordinated workflows.",
+          "Optimized data pipelines and Knowledge Graph workloads on Databricks.",
+          "Partnered with the team to ship production-grade Data/AI solutions."
+        ]
+      },
+      {
+        company: "Data Impact VN",
+        role: "AI Engineer Intern",
+        period: "09/2025 - 02/2026",
+        description: [
+          "Researched Generative AI: RAG, AI Agents, MCP protocols, and Agent-to-Agent (A2A) architectures.",
+          "Built multi-agent prototypes and inter-agent communication flows.",
+          "Processed large-scale data and constructed Knowledge Graphs on Databricks.",
+          "Supported the design and delivery of enterprise Data & AI solutions."
         ]
       },
       {
@@ -187,54 +269,114 @@ const portfolioData = {
       "Programming & Foundations": ["C", "C++", "Java", "Python", "HTML/CSS", "JavaScript/TypeScript", "Rust", "OOP", "DSA"],
       "Databases": ["MySQL", "PostgreSQL", "SQL Server", "MongoDB", "Redis", "ETL"],
       "Backend": ["RESTful API", "Microservices", "FastAPI", "Version Control"],
-      "AI - ML": ["Machine Learning (scikit-learn)", "Deep Learning with PyTorch(CNN, RNN, GAN, Transformer)", "Generative AI (LLM, RAG, Agents, MCP, A2A)"],
+      "AI - ML": ["Machine Learning (scikit-learn)", "Deep Learning with PyTorch(CNN, RNN, GAN, Transformer)", "Generative AI (LLM, RAG, Agents, MCP, A2A)", "Robotics", "VLA (Vision-Language-Action)"],
       "Big Data": ["Hadoop", "Spark", "Kafka", "Hive", "HBase", "Batch/Real-time Processing"],
       "DevOps & Tools": ["Linux", "Docker", "Kubernetes", "Git", "GCP/Cloud Basics", "Databricks"],
     },
     projects: [
       {
-        name: "MCP-FIN-TEST",
-        type: "AI Financial Agent & MCP Protocol",
-        period: "9/2025 - 10/2025",
-        repo: "https://github.com/triet4p/mcp-fin-test",
-        tech: ["Python", "FastAPI", "LangChain", "MCP", "Redis", "Docker", "Multi-LLM"],
+        name: "Cognition",
+        type: "Cognitively-grounded memory & agent runtime (Rust)",
+        period: "2025 - Present",
+        repo: "https://github.com/triet4p/cognition",
+        tech: ["Rust", "Tokio", "SQLx", "SQLite", "petgraph", "Serde"],
         description:
-          "An AI-powered financial agent built on the Model-Context-Protocol (MCP) philosophy, capable of extensible financial analysis and multi-LLM reasoning.",
+          "A Rust-first cognitively grounded agent memory system, extended into a full agent architecture.",
         features: [
-          "Multi-LLM Support: Seamless switching between Gemini, OpenAI, and Ollama models.",
-          "Microservices Architecture: Separated Agent Host, Tool Registry, and Real-time Data Services.",
-          "Memory & Caching: Redis-backed conversation history and response caching.",
-          "Deep integration with ITAPIA microservices for advanced financial analytics.",
+          "Long-term memory and knowledge-graph retrieval with spreading activation.",
+          "Memory extraction pipeline and prompt registry for LLM workflows.",
+          "Runtime/skill/CLI layers with a roadmap for Python bindings.",
+          "Rich node/edge schema supporting intention lifecycle and semantic links.",
         ],
       },
       {
-        name: "ITAPIA (MVP)",
-        type: "Stock Investment Support System",
+        name: "CogMem - Agent Memory Cognitive",
+        type: "Cognitive long-term conversational memory",
+        period: "2025 - Present",
+        repo: "https://github.com/triet4p/agent-memory-cognitive",
+        tech: ["Python", "uv", "Docker", "MkDocs"],
+        description:
+          "A long-term conversational memory system with retain/recall/reflect architecture and standardized documentation.",
+        features: [
+          "Retain/recall/reflect design for durable conversational memory.",
+          "Benchmark distillation and evaluation for LongMemEval and LoCoMo.",
+          "Curated tutorials and documentation published via GitHub Pages.",
+          "Local API runner and Docker smoke tests for quick validation.",
+        ],
+      },
+      {
+        name: "Bridge Research App",
+        type: "Desktop AI Research Assistant",
+        period: "2025 - Present",
+        repo: "https://github.com/triet4p/bridge-research",
+        tech: ["React", "TypeScript", "Tailwind CSS", "Tauri", "Python", "FastAPI", "DSPy", "SQLite"],
+        description:
+          "A desktop app that tracks ArXiv, analyzes papers, and generates implementation-ready insights.",
+        features: [
+          "Smart search + previews, offline research library, and PDF management.",
+          "Talk-to-Paper RAG with table-of-contents navigation and LaTeX rendering.",
+          "Trend radar over hundreds of papers with interactive keyword drill-down.",
+          "Agentic reporting with multi-model orchestration (Gemini/OpenAI/Claude/Ollama).",
+        ],
+      },
+      {
+        name: "LeRobot",
+        type: "Robotics & VLA library in PyTorch",
+        period: "2024 - Present",
+        repo: "https://github.com/triet4p/lerobot",
+        tech: ["Python", "PyTorch", "Hugging Face Hub", "Parquet", "MP4"],
+        description:
+          "A robotics library providing models, datasets, and training tools for real-world robots.",
+        features: [
+          "Unified Robot interface supporting diverse hardware and teleoperation devices.",
+          "Standardized LeRobotDataset format (Parquet + video) with streaming support.",
+          "State-of-the-art policies for imitation learning, RL, and Vision-Language-Action.",
+          "Hugging Face Hub integration for dataset/model sharing.",
+        ],
+      },
+      {
+        name: "Math AI Connect",
+        type: "Personal Knowledge Journal (Astro)",
+        period: "2026 - Present",
+        repo: "https://github.com/triet4p/math-ai-connect",
+        tech: ["Astro", "MDX", "Tailwind CSS", "remark-math", "rehype-katex"],
+        description:
+          "A Math & AI knowledge journal with structured posts and research planning.",
+        features: [
+          "Content collections for posts and planned topics with clear schemas.",
+          "Routes for /posts and /plans organized by tags and topics.",
+          "KaTeX-powered math rendering for technical notes.",
+          "GitHub Pages deployment workflow for publishing.",
+        ],
+      },
+      {
+        name: "Aegis-MA",
+        type: "A2A Multi-Agent SDK (JSON-RPC/WebSocket)",
+        period: "2025 - Present",
+        repo: "https://github.com/triet4p/aegis-ma",
+        tech: ["Python", "WebSocket", "JSON-RPC 2.0", "Pydantic", "JWT"],
+        description:
+          "A semi-centralized multi-agent system with a production-grade SDK and reference implementation.",
+        features: [
+          "Orchestrator agent handling registration, monitoring, and JWT issuance.",
+          "Core SDK with BaseAgent, registry, schemas, and structured logging.",
+          "P2P communication via JSON-RPC 2.0 over WebSocket.",
+          "Extensible design for registries, auth, and agent backends.",
+        ],
+      },
+      {
+        name: "ITAPIA",
+        type: "Transparent stock investment assistant (MVP)",
         period: "6/2025 - 8/2025",
         repo: "https://github.com/triet4p/itapia",
-        tech: ["Python", "FastAPI", "Pytorch", "PostgreSQL", "Redis", "Docker", "Vue.js"],
+        tech: ["Python", "FastAPI", "Vue.js", "TypeScript", "Docker", "PostgreSQL", "Redis"],
         description:
-          "A full-stack investment support system based on microservices architecture, focusing on XAI (Explainable AI) and personalization.",
+          "An explainable stock investment assistant focused on transparent decision-making.",
         features: [
-          "Multi-stream analysis: Technical indicators (TA-Lib), News Analysis (BERT/NER), Forecasting (LightGBM).",
-          "Transparent Rule Engine: Based on Symbolic Expression Trees to create explainable investment rules.",
-          "High-performance Backend with FastAPI & Pydantic.",
-          "SPA Frontend with Vue.js & TypeScript, OAuth2/JWT authentication.",
-        ],
-      },
-      {
-        name: "Big Data on Kubernetes",
-        type: "Log Streaming Processing System",
-        period: "12/2024 - 4/2025",
-        repo: "https://github.com/triet4p/app-log-process-k8s",
-        tech: ["Python", "Docker", "Kubernetes", "Hadoop", "Spark", "Kafka", "Hive"],
-        description:
-          "Built a real-time Big Data system for log streaming processing fully deployed on a Kubernetes cluster.",
-        features: [
-          "Pipeline: Kafka → Spark Streaming → HDFS → Hive.",
-          "Containerized Hadoop ecosystem optimized for K8s.",
-          "Integrated Spark Operator for managing Spark applications.",
-          "Data Warehouse layer with Hive Metastore and PostgreSQL backend.",
+          "Hybrid AI combining forecasting, NLP, and an explainable rule engine.",
+          "Evidence-backed recommendations with triggered rule explanations.",
+          "Personalized investment profiles and risk management workflows.",
+          "Full-stack microservices with Dockerized deployment.",
         ],
       },
     ],
